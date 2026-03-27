@@ -2,3 +2,7 @@
 - name: 'Gather facts'
   hosts: 'all'
   gather_facts: true
+  tasks:
+    - name: 'Print vars'
+      ansible.builtin.debug:
+        var: '{{ hostvars[inventory_hostname] | to_nice_json }}'
