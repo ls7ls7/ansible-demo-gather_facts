@@ -1,0 +1,8 @@
+---
+- name: 'Sleep'
+  hosts: 'all'
+  gather_facts: flase
+  tasks:
+    - name: Sleep'
+      ansible.builtin.pause:
+        minutes: '{{ sleep_minutes | default(5) }}'
