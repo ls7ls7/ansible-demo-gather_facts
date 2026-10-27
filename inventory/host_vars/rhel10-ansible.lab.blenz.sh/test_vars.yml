@@ -1,3 +1,4 @@
 ---
 custom_test_var: test1
+__test_var_from_host_vars: "This is a var from host_vars"
 ...
